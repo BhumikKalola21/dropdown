@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Album example for Bootstrap</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+
+            background-color: #343A40;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 20px;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .text {
+            padding-left: 8px;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+
+        .head {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            margin-top: 15%;
+
+        }
+
+
+
+
+        .btn1 {
+            padding: 10px 20px 10px 20px;
+            background-color: #007bff;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline-block;
+            border: none;
+
+
+        }
+
+        .btn2 {
+            padding: 10px 20px 10px 20px;
+            background-color: #6c757d;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: inline-block;
+            border: none;
+        }
+
+        .container2 {
+            width: 70%;
+            margin: 10% auto auto auto;
+            padding: 0 15px;
+            /* border: solid; */
+
+            /* border-style: solid; */
+            background-color: #f8f9fa;
+        }
+
+        .column {
+            /* border: grey; */
+            border: solid grey;
+            display: block;
+            margin: auto 3px 10px auto;
+            width: 33%;
+            position: relative;
+
+
+            text-align: center;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+
+        /* .column:hover {
+
+            background-color: burlywood;
+            border-radius: 20px;
+            opacity: 0.8;
+            border-style: solid;
+
+
+        } */
+
+        .logo {
+            /* border-style: solid; */
+            max-width: 100%;
+
+
+
+        }
+
+        .btn {
+            margin: -2px;
+            padding: 5px;
+            width: 80px;
+        }
+
+        .gap {
+            position: absolute;
+            left: 2px;
+            bottom: 2px;
+        }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+            display: flex;
+            margin: -6px;
+            flex-wrap: wrap;
+        }
+
+        .row:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        .nav-block {
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-item {
+            display: inline;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: white;
+            padding: 3px;
+
+        }
+
+        .nav-link:hover {
+            background-color: orange;
+        }
+
+        .header-wrapper {
+            width: 70%;
+            background-color: mediumslateblue;
+            display: flex;
+            border: solid;
+            align-items: center;
+            margin: auto auto 5px auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .up {
+            position: fixed;
+            width: 50px;
+            bottom: 0;
+            right: 0;
+        }
+        .footer{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            
+        }
+        .footer-link{
+            text-decoration: none;
+        }
+
+        @media(max-width:991px) {
+            .column {
+                width: 50%;
+                /* display: flex;
+                flex-direction: column-reverse; */
+            }
+        }
+
+        @media(max-width:767px) {
+            .column {
+                width: 100%;
+                margin-bottom: 30px;
+                /* display: flex;
+                flex-direction: column-reverse; */
+
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="#">
+        <img class="up"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu5vFu8SI2QOYcErMlRNjJk1FLdBR3AeXSEFu1Zr3rSLgvz2WGf8e-SmKIAwZLFhOZ9yw&usqp=CAU"
+            alt="">
+    </a>
+    <!-- <navigation bar start> -->
+    <div class="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera"
+            viewBox="0 0 16 16">
+            <path
+                d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+            <path
+                d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+        </svg>
+        <p class="text">Album</p>
+        <!-- <navigation bar start> -->
+    </div>
+    <!-- <Body start> -->
+    <div class="container">
+        <div>
+            <p class="head">Album Example</p>
+            <p>Something short and leading about the collection below—its contents, the creator, etc. Make it short and
+                sweet, but not too short so folks don't simply skip over it entirely.</p>
+            <button class="btn1">Main call to action</button>
+            <button class="btn2">Secondary action</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="row">
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <img class="logo"
+                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22208%22%20height%3D%22226%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20226%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_17e060f4546%20text%20%7B%20fill%3A%23eceeef%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A11pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_17e060f4546%22%3E%3Crect%20width%3D%22208%22%20height%3D%22226%22%20fill%3D%22%2355595c%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2266.9296875%22%20y%3D%22117.95%22%3EThumbnail%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                    alt="">
+                <div>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content. This
+                        content is a little bit longer.</p>
+                    <div class="gap">
+                        <button class="btn">View</button>
+                        <button class="btn">Edit</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <Body end> -->
+        <!-- <footer start> -->
+            <div class="footer">
+                <div>
+                    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+                    <p>New to Bootstrap?<a class="footer-link" href="#">Visit the homepage</a>read our <a class="footer-link" href="#">getting started guide</a></p>
+                </div>
+            </div>
+        <!-- <footer start> -->
+
+</body>
+
+</html>
